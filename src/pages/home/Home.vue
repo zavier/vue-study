@@ -1,6 +1,6 @@
 <template>
     <div>
-        <home-header></home-header>
+        <home-header :city="city"></home-header>
         <home-swiper></home-swiper>
         <home-icons></home-icons>
     </div>
@@ -17,6 +17,11 @@ export default {
     HomeHeader,
     HomeSwiper,
     HomeIcons
+  },
+  data () {
+    return {
+      city: ''
+    }
   },
   methods:{
     getHomeInfo () {
